@@ -20,7 +20,7 @@ Define your routes.
 (defcom-route route destruct component options)
 
 ```
-Basically the `defcom-route` macro takes four parameters, the `route` and `destruct` are the same parameters the `defroute` macro from Secretary expects. The `component` and `options` are the backing component and options map that the `root` function from Om expects.
+Basically the `defcom-route` macro takes four parameters, the `route` and `destruct` are the same parameters the `defroute` macro from Secretary expects. The `component` and `options` are the backing component and options map that the `root` function from Om expects. Any parameters defined within the `destruct` param, can be pass in to your component in the `options` map (See the example below).
 
 Define your router.
 
