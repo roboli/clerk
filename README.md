@@ -79,3 +79,8 @@ The `start` function expects your router var and a defined route. Which will sta
 
 ;; Start the application rendering the home component
 (c/start my-router "/")
+
+```
+### License
+
+Distributed under the Eclipse Public License, the same as Clojure.
