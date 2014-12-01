@@ -29,10 +29,10 @@
                          :source-map "examples/greeting/app.js.map"
                          :optimizations :none}}
 
-             {:id "simple-router"
-              :source-paths ["src/cljs" "examples/simple-router/src"]
+             {:id "simple-site"
+              :source-paths ["src/cljs" "examples/simple-site/src"]
               :compiler {
-                         :output-to "examples/simple-router/app.js"
-                         :output-dir "examples/simple-router/out"
-                         :source-map "examples/simple-router/app.js.map"
+                         :output-to "examples/simple-site/app.js"
+                         :output-dir "examples/simple-site/out"
+                         :source-map "examples/simple-site/app.js.map"
                          :optimizations :none}}]})

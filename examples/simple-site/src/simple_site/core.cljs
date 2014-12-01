@@ -1,4 +1,4 @@
-(ns simple-router.core
+(ns simple-site.core
   (:require [om.core :as om :include-macros true]
             [om.dom :as dom :include-macros true]
             [clerk.core :as c :refer-macros [defcom-route defrouter]]))
