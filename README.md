@@ -3,6 +3,8 @@ Clerk
 
 Syntatic sugar over [Secretary](www.github.com/gf3/secretary) router to make it [Om](www.github.com/swannodette/om) ready.
 
+Note: Please read both libraries' documentation if your not familiar with them before proceeding.
+
 ###Usage
 
 Require the clerk library.
@@ -81,6 +83,10 @@ The `start` function expects your router var and a defined route. Which will sta
 (c/start my-router "/")
 
 ```
+### Warning
+
+This library hasn't been used in production, so its subject to change.
+
 ### License
 
 Distributed under the Eclipse Public License, the same as Clojure.
