@@ -21,6 +21,14 @@
                 :source-map true}}
 
              ;; examples
+             {:id "greeting"
+              :source-paths ["src/cljs" "examples/greeting/src"]
+              :compiler {
+                         :output-to "examples/greeting/app.js"
+                         :output-dir "examples/greeting/out"
+                         :source-map "examples/greeting/app.js.map"
+                         :optimizations :none}}
+
              {:id "simple-router"
               :source-paths ["src/cljs" "examples/simple-router/src"]
               :compiler {
