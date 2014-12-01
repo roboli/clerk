@@ -29,10 +29,12 @@
    (dom/div nil
             (dom/p nil (str (:greet cursor) (:name opts))))))
 
+;; Add routes as in Secretary
 (defcom-route "/" [] home {:init-state {:form-name nil}})
-
 (defcom-route "/greet/:name" [name] greet {:opts {:name name}})
 
+;; Define the router
 (defrouter my-router app-state (. js/document (getElementById "app")))
 
+;; Start the application rendering the home component
 (c/start my-router "/")
