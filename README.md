@@ -7,7 +7,7 @@ Note: Please read both libraries' documentation if your not familiar with them b
 
 ###Installation
 
-Currently only a snapshot is available.
+Currently only a snapshot is available:
 
 ```clojure
 [org.clojars.roboli/clerk "0.1.0-SNAPSHOT"]
@@ -16,14 +16,14 @@ Currently only a snapshot is available.
 
 ###Usage
 
-Require the clerk library.
+#####Require the clerk library:
 
 ```clojure
 (ns your-app.core
   (:require [clerk.core :refer-macros [defcom-route defrouter]]))
 
 ```
-Define your routes.
+#####Define your routes:
 
 ```clojure
 (defcom-route route destruct component options)
@@ -31,7 +31,7 @@ Define your routes.
 ```
 Basically the `defcom-route` macro takes four parameters, the `route` and `destruct` are the same parameters the `defroute` macro from Secretary expects. The `component` and `options` are the backing component and options map that the `root` function from Om expects. Any parameters defined within the `destruct` param, can be pass in to your component in the `options` map (See the example below).
 
-Define your router.
+#####Define your router:
 
 ```clojure
 (defrouter name value target)
@@ -39,7 +39,7 @@ Define your router.
 ```
 The `defrouter` macro expects the `name` for your router var, the `value` which is (taken from Om's documentation) *"either a tree of associative ClojureScript data structures or an atom wrapping a tree of associative ClojureScript data structures"*. And `target` is just a shortcut to the `:target` value from the `options` map.
 
-Finally, start your application.
+#####Finally, start your application:
 
 ```clojure
 (clerk.core/start router route)
