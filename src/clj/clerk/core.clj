@@ -11,13 +11,13 @@
                      {:keys destruct}
                      destruct) params#]
               (fn [cursor# target#]
-                (om.core/root ~component cursor# (if ~opts
+                (clerk.core/root ~component cursor# (if ~opts
                                                    (assoc ~opts :target target#)
                                                    {:target target#}))))
             (vector? params#)
             (let [~destruct params#]
               (fn [cursor# target#]
-                (om.core/root ~component cursor# (if ~opts
+                (clerk.core/root ~component cursor# (if ~opts
                                                    (assoc ~opts :target target#)
                                                    {:target target#}))))))]
      (clerk.core/add-route! ~route action#)))

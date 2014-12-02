@@ -1,5 +1,6 @@
 (ns clerk.core
-  (:require [secretary.core :as sc]
+  (:require [om.core :as om]
+            [secretary.core :as sc]
             [goog.events :as events])
   (:import goog.History
            goog.History.EventType))
@@ -17,3 +18,6 @@
 
 (defn add-route! [route action]
   (sc/add-route! route action))
+
+(defn root [f value options]
+  (om/root f value options))
