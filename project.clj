@@ -1,4 +1,4 @@
-(defproject clerk "0.1.0-SNAPSHOT"
+(defproject org.clojars.roboli/clerk "0.1.0-SNAPSHOT"
   :description "Syntatic sugar over Secretary router to make it Om ready."
   :url "http://github.com/roboli/clerk"
 
