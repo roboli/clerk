@@ -5,6 +5,15 @@ Syntatic sugar over [Secretary](www.github.com/gf3/secretary) router to make it 
 
 Note: Please read both libraries' documentation if your not familiar with them before proceeding.
 
+###Installation
+
+Currently only a snapshot is available.
+
+```clojure
+[org.clojars.roboli/clerk "0.1.0-SNAPSHOT"]
+
+```
+
 ###Usage
 
 Require the clerk library.
