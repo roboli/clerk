@@ -7,7 +7,7 @@ Note: Please read both libraries' documentation if your not familiar with them b
 
 ###Installation
 
-Currently only a snapshot is available:
+Currently only a snapshot is available, include it in your `project.clj` dependencies:
 
 ```clojure
 [org.clojars.roboli/clerk "0.1.0-SNAPSHOT"]
