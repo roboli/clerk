@@ -1,6 +1,6 @@
 (defproject clerk "0.1.0-SNAPSHOT"
   :description "Syntatic sugar over Secretary router to make it Om ready."
-  :url "http://example.com/FIXME"
+  :url "http://github.com/roboli/clerk"
 
   :dependencies [[org.clojure/clojure "1.6.0"]
                  [org.clojure/clojurescript "0.0-2371"]
