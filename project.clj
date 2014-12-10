@@ -15,14 +15,7 @@
 
   :source-paths ["src/clj" "src/cljs"]
 
-  :cljsbuild {:builds [{:id "clerk"
-                        :source-paths ["src/cljs"]
-                        :compiler {:output-to "clerk.js"
-                                   :output-dir "out"
-                                   :optimizations :none
-                                   :source-map true}}
-
-                       {:id "test"
+  :cljsbuild {:builds [{:id "test"
                         :source-paths ["src/cljs" "test/cljs"]
                         :compiler {:preamble ["react/react.js"]
                                    :output-to "test.js"
