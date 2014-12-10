@@ -18,7 +18,7 @@
   :cljsbuild {:builds [{:id "test"
                         :source-paths ["src/cljs" "test/cljs"]
                         :compiler {:preamble ["react/react.js"]
-                                   :output-to "test.js"
+                                   :output-to "test/test.js"
                                    :optimizations :whitespace}}
 
                        ;; examples
@@ -39,4 +39,4 @@
               :test-commands {"unit-tests" ["phantomjs"
                                             :runner
                                             "test/vendor/phantomjs-shims.js"
-                                            "test.js"]}})
+                                            "test/test.js"]}})
