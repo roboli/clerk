@@ -9,6 +9,8 @@
 
   :plugins [[lein-cljsbuild "1.0.4-SNAPSHOT"]]
 
+  :profiles {:dev {:plugins [[com.cemerick/austin "0.1.5"]]}}
+
   :source-paths ["src/clj" "src/cljs"]
 
   :cljsbuild { 
