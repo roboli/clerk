@@ -15,37 +15,35 @@
 
   :source-paths ["src/clj" "src/cljs"]
 
-  :cljsbuild { 
-    :builds [{:id "clerk"
-              :source-paths ["src/cljs"]
-              :compiler {
-                :output-to "clerk.js"
-                :output-dir "out"
-                :optimizations :none
-                :source-map true}}
+  :cljsbuild {:builds [{:id "clerk"
+                        :source-paths ["src/cljs"]
+                        :compiler {:output-to "clerk.js"
+                                   :output-dir "out"
+                                   :optimizations :none
+                                   :source-map true}}
 
-             {:id "test"
-              :source-paths ["src/cljs" "test/cljs"]
-              :compiler {
-                         :preamble ["react/react.js"]
-                         :output-to "test.js"
-                         :optimizations :whitespace}}
+                       {:id "test"
+                        :source-paths ["src/cljs" "test/cljs"]
+                        :compiler {:preamble ["react/react.js"]
+                                   :output-to "test.js"
+                                   :optimizations :whitespace}}
 
-             ;; examples
-             {:id "greeting"
-              :source-paths ["src/cljs" "examples/greeting/src"]
-              :compiler {
-                         :output-to "examples/greeting/app.js"
-                         :output-dir "examples/greeting/out"
-                         :source-map "examples/greeting/app.js.map"
-                         :optimizations :none}}
+                       ;; examples
+                       {:id "greeting"
+                        :source-paths ["src/cljs" "examples/greeting/src"]
+                        :compiler {:output-to "examples/greeting/app.js"
+                                   :output-dir "examples/greeting/out"
+                                   :source-map "examples/greeting/app.js.map"
+                                   :optimizations :none}}
 
-             {:id "simple-site"
-              :source-paths ["src/cljs" "examples/simple-site/src"]
-              :compiler {
-                         :output-to "examples/simple-site/app.js"
-                         :output-dir "examples/simple-site/out"
-                         :source-map "examples/simple-site/app.js.map"
-                         :optimizations :none}}]
+                       {:id "simple-site"
+                        :source-paths ["src/cljs" "examples/simple-site/src"]
+                        :compiler {:output-to "examples/simple-site/app.js"
+                                   :output-dir "examples/simple-site/out"
+                                   :source-map "examples/simple-site/app.js.map"
+                                   :optimizations :none}}]
 
-              :test-commands {"unit-tests" ["phantomjs" :runner "test/vendor/phantomjs-shims.js" "test.js"]}})
+              :test-commands {"unit-tests" ["phantomjs"
+                                            :runner
+                                            "test/vendor/phantomjs-shims.js"
+                                            "test.js"]}})
