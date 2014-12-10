@@ -9,7 +9,8 @@
 
   :plugins [[lein-cljsbuild "1.0.4-SNAPSHOT"]]
 
-  :profiles {:dev {:plugins [[com.cemerick/austin "0.1.5"]]}}
+  :profiles {:dev {:plugins [[com.cemerick/austin "0.1.5"]
+                             [com.cemerick/clojurescript.test "0.3.1"]]}}
 
   :source-paths ["src/clj" "src/cljs"]
 
