@@ -1,7 +1,7 @@
 Clerk
 =====
 
-Syntatic sugar over [Secretary](www.github.com/gf3/secretary) router to make it [Om](www.github.com/swannodette/om) ready.
+Syntatic sugar over [Secretary](https://github.com/gf3/secretary) router to make it [Om](https://github.com/omcljs/om) ready. Enables you to define routes faster with Om components and keep track of navigation events with goog.History.
 
 Note: Please read both libraries' documentation if your not familiar with them before proceeding.
 
