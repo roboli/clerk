@@ -3,7 +3,7 @@
   :url "http://github.com/roboli/clerk"
 
   :dependencies [[org.clojure/clojure "1.6.0"]
-                 [org.clojure/clojurescript "0.0-2371"]
+                 [org.clojure/clojurescript "0.0-2755"]
                  [om "0.7.3"]
                  [com.facebook/react "0.11.2"]
                  [secretary "1.2.1"]]
