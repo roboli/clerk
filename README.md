@@ -92,9 +92,6 @@ The `start` function expects your router var and a defined route. Which will sta
 (c/start my-router "/")
 
 ```
-### Warning
-
-This library hasn't been used in production, so its subject to change.
 
 ### License
 
